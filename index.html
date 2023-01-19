@@ -8,22 +8,100 @@
     <style>
         .nav{
             display:flex;
-            border: black solid 1px;
+            /* border: black solid 1px; */
             background-color: white;
-            justify-content: space-around;
+            /* justify-content: space-around; */
         }
         .div1{
             display: flex;
             background-color: maroon;
-            color:white;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
         }
+        .div1 a{
+            color: white;
+            text-decoration: none;
+            font-size: larger;
+            margin-right: 30px;
+            font-weight: bold;
+        }
+        .nav img{
+            margin-left: 20px;
+            margin-right: 80px;
+        }
+        .nav input{
+            margin-right:2px;
+            background-color: rgb(195, 193, 193);
+            width: 500px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 2px;
+        }
+        .nav a{
+            margin-left: 30px;
+            margin-right: 20px;
+            margin-top: 15px;
+            font-size: large;
+            text-decoration: none;
+            color: black;
+        }
+        div h1{
+            width: 100%;
+            text-align: center;
+            margin:50px 0px 20px 0px;
+            border-bottom: 1px solid grey;
+            line-height: 0.1px;
+        }
+        div h1 span{
+            padding: 0px 10px 0px 10px;
+            background-color: white;
+            font-weight: lighter;
+            /* line-height: 2px; */
+        }
+        .photos{
+            display: flex;
+            /* border: 1px solid black; */
+        }
+        .photos img{
+            width: 300px;
+        }
+        .image{
+            /* border: 1px solid red; */
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .image a{
+            display: block;
+            margin-left: 110px;
+            color: black;
+            text-decoration:none;
+        }
+        #idols{
+            margin-left: 135px;
+        }
+        .pic img{
+            width: 100%;
+        }
+        #search{
+            width:100px;
+            margin-right: auto;
+            background-color: white;
+            border: 1px black solid;
+        }
+        #prev{
+            margin-right: 1450px;
+        }
+        
     </style>
 </head>
 <body>
     <div>
         <div class="nav">
-            <img src="./r&b.jpg" alt="error">
-            <input type="text" placeholder="SEARCH">
+            <img src="./name.jpg" alt="error">
+            <input type="text" placeholder="SEARCH"/>
+            <input type="submit" value="Search"  id="search"/>
             <a href="./admin-page.html">Sign In/Register</a>
             <a href="./wishlist.html">Wishlist</a>
             <a href="./cart.html">Cart</a>
@@ -32,6 +110,59 @@
             <a href="./home-decor.html">Home Decor</a>
             <a href="./products.html">Products Near Me</a>
         </div>
+        <div>
+            <h1><span>Shop By Category</span></h1>
+        </div>
+        <div class="photos">
+            <div class="image">
+                <img src="https://cdn.plotch.io/image/upload/C/V/1671109983_Mi5wbmc=.png" alt="error">
+                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Home+%26+Decor">Home Decor</a>
+            </div>
+            <div class="image">
+                <img src="https://cdn.plotch.io/image/upload/C/V/1671109989_My5wbmc=.png" alt="error">
+                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Home+%26+Decor">Tote Bags</a>
+            </div>
+            <div class="image">
+                <img src="https://cdn.plotch.io/image/upload/C/V/1671109994_NC5wbmc=.png" alt="error">
+                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Kitchen+Accessories">Kitchen Ware</a>
+            </div>
+            <div class="image">
+                <img src="https://cdn.plotch.io/image/upload/C/V/1671109999_NS5wbmc=.png" alt="error">
+                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Home+%26+Decor">Ceramic Mugs</a>
+            </div>
+            <div class="image">
+                <img src="https://cdn.plotch.io/image/upload/C/V/1671110006_Ni5wbmc=.png" alt="error">
+                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Home+%26+Decor" id="idols">Idols</a>
+            </div>
+        </div>
+        <div class="pic">
+            <img src="" alt="" id="uv" />
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
     </div>
 </body>
 </html>
+<script>
+       let prevButton = document.getElementById("prev");
+    let nextButton = document.querySelector("#next");
+    let imageTag = document.querySelector("#uv");
+    let currentIndex = 0;
+    let imageArr = [
+      "https://cdn.plotch.io/image/upload/C/V/1671110155_NC5wbmc=.png",
+      "https://cdn.plotch.io/image/upload/C/V/1671110161_Mi5wbmc=.png",
+      "https://cdn.plotch.io/image/upload/C/V/1671110178_SG9tZWRlY29yLnBuZw==.png",];
+
+    prevButton.addEventListener("click", function () {
+      currentIndex--;
+      displayImage();
+    });
+    nextButton.addEventListener("click", function () {
+      currentIndex++;
+      displayImage();
+    });
+    function displayImage() {
+      imageTag.setAttribute("src", imageArr[currentIndex]);
+    }
+    displayImage();
+</script>
