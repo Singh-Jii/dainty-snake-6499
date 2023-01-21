@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAINTY-SNAKE-6499</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
     <style>
         .nav{
             display:flex;
@@ -72,29 +73,47 @@
         }
         .photos{
             display: flex;
-            /* border: 1px solid black; */
+            /* border: 8px solid black; */
             /* width: 100%; */
+            height: 220px;
+            border-radius: 15px;
+            
+
         }
         .image{
             /* border: 1px solid red; */
             margin-top: 10px;
             margin-bottom: 10px;
+            /* margin-right: 5px; */
             width: 20%;
             height: 250px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 45px;
+        }
+        .image:hover{
+            color:rgb(156, 153, 153);
+            background-color:whitesmoke;
         }
         .image a img{
             width: 300px;
             height: 200px;
+
         }
-        .pic img{
+        /* slide show */
+        /* .pic{
+            /* border: 6px solid green; */
+            /* margin-top: 9px; */
+        /* } */
+        /* .pic img{
             width: 100%;
-        }
+        }  */
         #search{
             width:100px;
             margin-right: auto;
             background-color: white;
             border: 1px black solid;
         }
+        /* slide show */
         #prev{
             margin-right: 1450px;
             position: relative;
@@ -120,6 +139,8 @@
             width: 100%;
             background-color: black;
             justify-content: space-around;
+            /* margin-bottom: 80px; */
+            /* border: 5px solid rgb(207, 30, 30); */
         }
         .black img{
             width: 190px;
@@ -128,22 +149,29 @@
         }
         .flex{
             display: flex;
+            background-color:white;
+            /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
             /* justify-content: space-around; */
             /* align-items: center; */
         }
         .flex a img{
-            width: 90%;
+            width: 95%;
             margin-left: 40px;
             margin-right: 10px;
             margin-top: 50px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            /* background-color: rgb(174, 173, 173); */
         }
         .flex1{
             display: flex;
+            background-color: white;
+            /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
         }
         .flex1 a img{
-            width: 90%;
+            width: 95%;
             margin-left: 40px;
             margin-top: 50px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
             /* padding-left: 30px; */
             /* padding-right: 30px; */
             /* margin-block-end: 100px; */
@@ -151,17 +179,74 @@
             /* margin-inline: 100px; */
             /* margin-block: 100px; */
         }
+        .a1{
+            margin-left: 60px;
+        }
+        .a2{
+            margin-right:120px ;
+        }
+        /* slide show */
+        #uv{
+            height: 500px;
+        }
+        .banner{
+            display: flex;
+            background-color: maroon;
+            margin-top: 30px;
+            margin-bottom: 60px;
+            border: 1px solid black;
+            width: 100%;
+        }
+        .banner div h3{
+            color: white;
+            font-weight: normal;
+        }
+        .banner div h4{
+            color: white;
+            font-weight: normal;
+        }
+        .banner div a p{
+            color: white;
+            font-weight: normal;
+            /* text-decoration: none; */
+            line-height: 1px;
+        }
+        .banner div a{
+            text-decoration: none;
+        }
+        .banner div {
+            width: 25%;
+            /* border: 1px solid greenyellow; */
+            padding-top: 50px;
+            padding-left: 100px;
+            padding-right: 40px;
+        }
+        .contacts h4{
+            line-height: 1px;
+        }
+        #support{
+            padding-top: 20px;
+        }
+        a:hover{
+            background-color:white;
+            cursor: pointer;
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+        }
+        .div1 a:hover{
+            background-color: rgb(233, 227, 227);
+            color: maroon;
+        }
     </style>
 </head>
 <body>
     <div>
         <div class="nav">
             <img src="./name.jpg" alt="error">
-            <input type="text" placeholder="SEARCH"/>
+            <input type="text" placeholder="SEARCH" name="search"/>
             <input type="submit" value="Search"  id="search"/>
-            <a href="./admin-page.html">Sign In/Register</a>
-            <a href="./wishlist.html">Wishlist</a>
-            <a href="./cart.html">Cart</a>
+            <a href="./register.html">Sign In/Register</a>
+            <a href="https://www.craftsvilla.com/cart">Wishlist</a>
+            <a href="https://www.craftsvilla.com/secure/cart">Cart</a>
         </div>
         <div class="div1">
             <a href="./home-decor.html">Home Decor</a>
@@ -172,23 +257,24 @@
         </div>
         <div class="photos">
             <div class="image">
-                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Home+%26+Decor"><img src="https://cdn.plotch.io/image/upload/C/V/1671109983_Mi5wbmc=.png" alt="error"></a>
+                <a href="./home-decor.html"><img src="https://cdn.plotch.io/image/upload/C/V/1671109983_Mi5wbmc=.png" alt="error"></a>
             </div>
             <div class="image">
-                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Home+%26+Decor"><img src="https://cdn.plotch.io/image/upload/C/V/1671109989_My5wbmc=.png" alt="error"></a>
+                <a href="./products.html"><img src="https://cdn.plotch.io/image/upload/C/V/1671109989_My5wbmc=.png" alt="error"></a>
             </div>
             <div class="image">
-                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Kitchen+Accessories"><img src="https://cdn.plotch.io/image/upload/C/V/1671109994_NC5wbmc=.png" alt="error"></a>
+                <a href="./home-decor.html"><img src="https://cdn.plotch.io/image/upload/C/V/1671109994_NC5wbmc=.png" alt="error"></a>
             </div>
             <div class="image">
-                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Home+%26+Decor"><img src="https://cdn.plotch.io/image/upload/C/V/1671109999_NS5wbmc=.png" alt="error"></a>
+                <a href="./home-decor.html"><img src="https://cdn.plotch.io/image/upload/C/V/1671109999_NS5wbmc=.png" alt="error"></a>
             </div>
             <div class="image">
-                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Home+%26+Decor"><img src="https://cdn.plotch.io/image/upload/C/V/1671110006_Ni5wbmc=.png" alt="error"></a>
+                <a href="./products.html"><img src="https://cdn.plotch.io/image/upload/C/V/1671110006_Ni5wbmc=.png" alt="error"></a>
             </div>
         </div>
+        
         <div class="pic">
-            <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Home+%26+Decor"><img src="" alt="" id="uv" /></a>
+            <a href="./home-decor.html"><img src="" alt="" id="uv" style="width: 100%;"/></a>
             <button id="prev"><</button>
             <button id="next">></button>
         </div>
@@ -201,23 +287,46 @@
         </div>
         <div>
             <div class="flex">
-                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Home+%26+Decor"><img src="https://cdn.plotch.io/image/upload/C/V/1671110234_SG9tZWRlY29yLnBuZw==.png" alt="error" ></a>
-                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Home+%26+Decor"><img src="https://cdn.plotch.io/image/upload/C/V/1671110241_NS5wbmc=.png" alt="error"></a>
+                <a href="./home-decor.html" class="a1"><img src="https://cdn.plotch.io/image/upload/C/V/1671110234_SG9tZWRlY29yLnBuZw==.png" alt="error"></a>
+                <a href="./products.html" class="a2"><img src="https://cdn.plotch.io/image/upload/C/V/1671110241_NS5wbmc=.png" alt="error"></a>
             </div>
             <div class="flex1">
-                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Home+%26+Decor"><img src="https://cdn.plotch.io/image/upload/C/V/1671110248_Ni5wbmc=.png" alt="error"></a>
-                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Home+%26+Decor"><img src="https://cdn.plotch.io/image/upload/C/V/1671110264_My5wbmc=.png" alt="error"></a>
+                <a href="./home-decor.html" class="a1"><img src="https://cdn.plotch.io/image/upload/C/V/1671110248_Ni5wbmc=.png" alt="error"></a>
+                <a href="./products.html" class="a2"><img src="https://cdn.plotch.io/image/upload/C/V/1671110264_My5wbmc=.png" alt="error"></a>
             </div>
         </div>
-        <div>
-            <div></div>
-            <div></div>
+        <div class="banner">
+            <div>
+                <h3>About Us</h3>
+                <h4>India's most convenient online grocery channel Buyerapp Fresh and Smart makes your grocery shopping even simpler. No more hassles of sweating it out in crowded markets, grocery shops & supermarkets - now shop from the comfort of your home; office, or on the move. We offer you the convenience of shopping for everything that you need for your home - be it fresh fruits & vegetables, rice, dals, oil, packaged food, dairy item, frozen, pet food, household cleaning items & personal care products from a single virtual store.</h4>
+                <h3>PAYMENT OPTIONS</h3>
+                <img src="./banner.jpg" alt="error">
+            </div>
+            <div>
+                <h3>OUR COMPANY</h3>
+                <a href="./home-decor.html"><p>About Us</p></a>
+                <a href="./products.html"><p>Contact Us</p></a>
+            </div>
+            <div>
+                <h3>TOP CATEGORIES</h3>
+                <a href="./home-decor.html"><p>Grocery</p></a>
+            </div>
+            <div class="contacts">
+                <h3>POLICIES & INFO</h3>
+                <a href="./home-decor.html"><p>Privacy Policy</p></a>
+                <a href="./products.html"><p>Terms & Condition</p></a>
+                <a href="./home-decor.html"><p>Shipping Policy</p></a>
+                <a href="./products.html"><p>Return & Refund</p></a>
+                <h3 id="support">SUPPORT</h3>
+                <h4>For Help, send an email to </h4>
+                <h4>customercare@craftsvilla.com</h4>
+            </div>
         </div>
     </div>
 </body>
 </html>
 <script>
-       let prevButton = document.getElementById("prev");
+    let prevButton = document.getElementById("prev");
     let nextButton = document.querySelector("#next");
     let imageTag = document.querySelector("#uv");
     let currentIndex = 0;
@@ -225,6 +334,17 @@
       "https://cdn.plotch.io/image/upload/C/V/1671110155_NC5wbmc=.png",
       "https://cdn.plotch.io/image/upload/C/V/1671110161_Mi5wbmc=.png",
       "https://cdn.plotch.io/image/upload/C/V/1671110178_SG9tZWRlY29yLnBuZw==.png",];
+      function myslide(){
+        document.getElementById("uv").src=imageArr[currentIndex];
+        if(currentIndex < imageArr.length-1){
+            currentIndex++;
+        }
+        else{
+            currentIndex=0;
+        }
+        setTimeout("myslide()",1500);
+      }
+      window.onload=myslide;
 
     prevButton.addEventListener("click", function () {
       currentIndex--;
@@ -237,4 +357,10 @@
     function displayImage() {
       imageTag.setAttribute("src", imageArr[currentIndex]);      
      }displayImage();
+
+
+
+
+
+    
 </script>

@@ -4,9 +4,386 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Decor</title>
+    <style>
+        .nav{
+            display:flex;
+            /* border: black solid 1px; */
+            background-color: white;
+            /* justify-content: space-around; */
+            position:fixed;
+            width: 100%;
+            height: 50px;
+            margin-bottom: 30px;
+        }
+        .div1{
+            display: flex;
+            background-color: maroon;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            /* position: fixed; */
+            width: 100%;
+            height: 120px;
+            /* margin-bottom: 100px; */
+        }
+        .div1 a{
+            color: white;
+            text-decoration: none;
+            font-size: larger;
+            margin-right: 30px;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+        #rb{
+            height: 35px;
+            margin-left: 10px;
+            margin-right: 80px;
+            /* margin-bottom: 60px; */
+        }
+        .nav input{
+            margin-right:2px;
+            background-color: rgb(195, 193, 193);
+            width: 500px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 2px;
+        }
+        .nav a{
+            margin-left: 30px;
+            margin-right: 50px;
+            margin-top: 15px;
+            font-size: large;
+            text-decoration: none;
+            color: black;
+        }
+        #search{
+            width:100px;
+            margin-right: auto;
+            background-color: white;
+            border: 1px black solid;
+        }
+        .banner{
+            display: flex;
+            background-color: maroon;
+            margin-top: 30px;
+            margin-bottom: 60px;
+            border: 1px solid black;
+            width: 100%;
+        }
+        .banner div h3{
+            color: white;
+            font-weight: normal;
+        }
+        .banner div h4{
+            color: white;
+            font-weight: normal;
+        }
+        .banner div a p{
+            color: white;
+            font-weight: normal;
+            /* text-decoration: none; */
+            line-height: 1px;
+        }
+        .banner div a{
+            text-decoration: none;
+        }
+        .banner div {
+            width: 25%;
+            /* border: 1px solid greenyellow; */
+            padding-top: 50px;
+            padding-left: 100px;
+            padding-right: 40px;
+        }
+        .contacts h4{
+            line-height: 1px;
+        }
+        #support{
+            padding-top: 20px;
+        }
+        .box{
+            width: 100%;
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+        }
+        .box div{
+            margin: auto;
+            /* border: 2px black solid; */
+            width: 100%;
+            height: 70%;
+            margin-right: 20px;
+            background-color: rgba(248, 238, 238, 0.986);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .box div:hover{
+            color:maroon;
+            background-color: rgb(254, 254, 254);
+        }
+        .box div img{
+            display: block;
+            width: 80%;
+            height: 300px;
+            margin: auto;
+        }
+        .box div p{
+            text-align: center;
+        }
+        .box div h3{
+            /* display: block; */
+            text-align: center;
+            color: goldenrod;
+          /* margin-right: 20px; */
+        }
+        .box div button{
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            background-color: maroon;
+            color: white;
+            font-weight: normal;
+        }
+        .box div button:hover{
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
-    <h1>home decor</h1>
+    <div>
+        <div class="nav">
+            <a href="./index.html"><img src="./name.jpg" alt="error" id="rb"></a>
+            <input type="text" placeholder="SEARCH"/>
+            <input type="submit" value="Search"  id="search"/>
+            <a href="./admin-page.html">Sign In/Register</a>
+            <a href="./wishlist.html">Wishlist</a>
+            <a href="./cart.html">Cart</a>
+        </div>
+        <div class="div1">
+            <a href="./home-decor.html">Home Decor</a>
+            <a href="./products.html">Products Near Me</a>
+        </div>
+        <div class="box">
+             <div style="height: 435px;">
+                <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOhMb1gxy1674264404_0eb781ac3800efe16b1aeacac314394cd76de1d51a09dc86f049f7fe65598a62.png" alt="error" style="height: 283px;">
+                      <p>Skintatva Herbal Shaving Gel & Neem Aloevera Face Wash Combo</p>
+                      <h3>₹379</h3>
+                      <button>Add To Cart</button>
+             </div>
+             <div>
+                <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOCy3ka7p1674295018_d4fe43cd05560e6d5790389d29237c11fdc7eff939b9f183bf9e0ea038264fbe.jpg" alt="error">
+                      <p>Skintatva Wallnut Scurb + Sunscreen Lotion Combo</p>
+                      <h3>₹530</h3>
+                      <button>Add To Cart</button>
+             </div>
+             <div>
+                <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOrJymrmb1674125755_c22820878f4d7f9f5ce103bc07313504a895379ada0e2368eff1df0276b4fd8a.jpg" alt="error">
+                      <p>Kids Hat Made Of Woolen</p>
+                      <h3>₹169</h3>
+                      <button>Add To Cart</button>
+             </div>
+             <div style="height: 435px;">
+                <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOkBl5y7A1674307668_d4407d47788cb6f9711a3eafb75ae37ee4069d9672b85ed81302dcffe9c4b207.jpg" alt="error" style="height: 265px;">
+                      <p>Jiva Aam Pachak Churna - 100 G - Pack Of 2 - Pure Herbs Used, 100% Ayurvedic Formulation, Churan For Healthy Digestion</p>
+                      <h3>₹340</h3>
+                      <button>Add To Cart</button>
+             </div>
+        </div>
+        <div class="box">
+              <div>
+                <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOo7rKCZL1674276162_21010b9675d480b8d3610649ca793d6f6bec3f40cc371c1a96f1c523e37134ca.jpg" alt="error">
+                      <p>Jiva A2 Gir Cow Ghee - Pure Desi Ghee 1l</p>
+                      <h3>₹2500</h3>
+                      <button>Add To Cart</button>
+              </div>
+              <div>
+                <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOBjyrJo11674143435_5928928b245b7a6d9f5e90476c1a093f5a438f98f475d83d3c94ac28e1d20ed3.png" alt="error">
+                      <p>Miniature Accessories / Toys (any Design And Color)</p>
+                      <h3>₹25</h3>
+                      <button>Add To Cart</button>
+              </div>
+              <div>
+                <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOURlmOH11674143258_ab5e292db6495899871d889aaab28308f7da8dfc3693a477ee73de9ad894ce44.jpg" alt="error">
+                      <p>Decorative Opaque Lemon Stones - 1 Kg</p>
+                      <h3>₹499</h3>
+                      <button>Add To Cart</button>
+              </div>
+              <div>
+                <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLO4rth8en1674110089_64f80ba831856e35913d6a562f9d9c51e1b3df6ea6bb2ba3e9913f6d8b2cc57e.jpg" alt="error">
+                      <p>Marigold French Seeds - Excellent Germination</p>
+                      <h3>₹39</h3>
+                      <button>Add To Cart</button>
+              </div>
+        </div>
+        <div class="box">
+               <div>
+                <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOSseujlW1674143298_29c6aaf6bf30380b85d7b5bc5624f3216dae00742fd20c3ef9264aead0a7bd1d.jpg" alt="error">
+                      <p>Black - 4 Pot Metal Stand</p>
+                      <h3>₹1619</h3>
+                      <button>Add To Cart</button>
+               </div>
+               <div style="height: 435px;">
+                <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOtAwG7mr1674205529_b7c7470e59e2a2df1bfd0a4705488ee6fe0c5c125de15cccdfab0e00d6c03dc0.jpg" alt="error" style="height: 283px;">
+                      <p>12.5 X 40 X 32 Inch - Metal Planter Stand 4 Pot Stand - Black</p>
+                      <h3>₹2849</h3>
+                      <button>Add To Cart</button>
+               </div>
+               <div>
+                <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOFmMeuFC1674180243_02d20bbd7e394ad5999a4cebabac9619732c343a4cac99470c03e23ba2bdc2bc.jpg" alt="error">
+                      <p>Tree Houseleek Succulent In 4 Inch Plastic Pot</p>
+                      <h3>₹249</h3>
+                      <button>Add To Cart</button>
+               </div>
+               <div style="height: 435px;">
+                <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOZXW9kIp1674230810_0d180d085cc6f96ccb06883896b6b4318c2ed0b7059828d633dbb615d9113fa1.jpg" alt="error" style="height: 283px;">
+                      <p>Balti Ceramic Planter- Yellow- Set Of 4 (10, 7.5, 6, 5 Inch)</p>
+                      <h3>₹779</h3>
+                      <button>Add To Cart</button>
+               </div>
+        </div>
+        <div class="box">
+                <div>
+                    <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLO0RRtjf41674044532_9459fd85ea5e53398de122a2ee40e3e05d9865ad2f5e9f1b946c9734854b7c48.jpg" alt="error">
+                      <p>Dracaena White-6 Inch Nursery Bag</p>
+                      <h3>₹269</h3>
+                      <button>Add To Cart</button>
+                </div>
+                <div>
+                    <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOB0RLDE71674044525_031b4af5197ec30a926f48cf40e11a7dbc470048a21e4003b7a3c07c5dab1baa.jpg" alt="error">
+                      <p>Mirchi in 4 Inch Nursery Bag</p>
+                      <h3>₹59</h3>
+                      <button>Add To Cart</button>
+                </div>
+                <div>
+                    <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLO2xw0FdV1674044531_159518cafa757e6fb7200483269c947e80916282618ced5c1c675f928121133e.jpg" alt="error">
+                      <p>Champion Palm-7 Inch Nursery Bag</p>
+                      <h3>₹599</h3>
+                      <button>Add To Cart</button>
+                </div>
+                <div>
+                    <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOkNtaaa71674044520_12ee5c1c92b7118583f94095ade3ce26558f9814cfc7b23458d7d6fa13887908.jpg" alt="error">
+                      <p>Jade in 4 Inch Nursery Bag</p>
+                      <h3>₹59</h3>
+                      <button>Add To Cart</button>
+                </div>
+        </div>
+        <div class="box">
+                 <div>
+                      <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLO51imAsg1670646673_d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35.jpg" alt="error">
+                      <p>Kasa Happy Birthday Foil Letter Balloons Party Decoration (gold)</p>
+                      <h3>₹199 (61% Off )</h3>
+                      <button>Add To Cart</button>
+                 </div>
+                 <div>
+                    <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLO7hOBB1H1669546382_b4fd484bbade5eb1230fc6e4d8b1de8d65d1ffbc536a4c739787b2955801c324.jpg" alt="error">
+                    <p>N G Products 100% Cotton Large Full Size White Bath Towels </p>
+                    <h3>₹999</h3>
+                    <button>Add To Cart</button>
+                 </div>
+                 <div>
+                    <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOdD7AaYN1674048341_905743a1cc58de12999f0f5d67e0d717715e4ec6c7a3420ea0c0a973ff79dba7.jpg" alt="error">
+                      <p>29 X 5 X 40 Cm + 60 Cm + 90 Cm - Set Of 3 - Wooden Hanging Wall Frame/planter Stand</p>
+                      <h3>₹3499</h3>
+                      <button>Add To Cart</button>
+                 </div>
+                 <div style="height: 700pxpx;">
+                    <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOLpHdyOH1674094615_b17ef6d19c7a5b1ee83b907c595526dcb1eb06db8227d650d5dda0a9f4ce8cd9.jpg" alt="error" style="height: 315px;">
+                      <p>7 Inch Baby Owl Green Ceramic Planter</p>
+                      <h3>₹269</h3>
+                      <button>Add To Cart</button>
+                 </div>
+        </div>
+
+
+
+
+        <div class="box">
+            <div style="height: 435px;">
+               <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOIJJBw5p1673533040_4088fae04e445aa02992350d836813d3175ef85be59766f0139fa24915c22b01.jpg" alt="error" style="height: 283px;">
+                     <p>Showpiece Radha Krishna Statue With Jhula - 5.6*2.5*7.5 (as282 G)</p>
+                     <h3>₹346</h3>
+                     <button>Add To Cart</button>
+            </div>
+            <div>
+               <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLO2N1nwB31672306847_462acda029e850faf80dda74c7d2078bbe296c9aa83b797af6a03d7f94615f4f.jpg" alt="error">
+                     <p>Ganesha Face Wall Hanging-7*2.5*10 Inches (bs629)</p>
+                     <h3>₹2780</h3>
+                     <button>Add To Cart</button>
+            </div>
+            <div>
+               <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOEwdGDFZ1672746163_0e39386f15711800d21c4438c900b30b79834758022a1ba77303640e23c51219.jpg" alt="error">
+                     <p>Ganeshji-5.5*5*8 Inches (bs497 G)</p>
+                     <h3>₹4600</h3>
+                     <button>Add To Cart</button>
+            </div>
+            <div style="height: 433px;">
+               <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOXXsq6ez1672152525_f07c72e0ceb41b593f891bbb44450afaf48f65ba45226356f6ee7e2db1c0d329.jpg" alt="error" style="height: 281px;">
+                     <p>Brass Showpiece Krishna Idol - 15.5*11.5*45 Inch (bs1346 E)</p>
+                     <h3>₹100000</h3>
+                     <button>Add To Cart</button>
+            </div>
+       </div>
+       <div class="box">
+        <div style="height: 435px;">
+           <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLO2IarNOx1674044483_01299ac65733b5a3d774265fbfe8396b8611e5e3321855dbc541cd301e71fe5e.jpg" alt="error" style="height: 301px;">
+                 <p>Decorative Colourful Shells - 100 Gm</p>
+                 <h3>₹79</h3>
+                 <button>Add To Cart</button>
+        </div>
+        <div>
+           <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOcZz3Vuz1673595290_535fa30d7e25dd8a49f1536779734ec8286108d115da5045d77f3b4185d8f790.jpg" alt="error">
+                 <p>Decorative White Unpolished Chips - 1 Kg</p>
+                 <h3>₹99</h3>
+                 <button>Add To Cart</button>
+        </div>
+        <div>
+           <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOfOOxGBW1673595290_eb1e33e8a81b697b75855af6bfcdbcbf7cbbde9f94962ceaec1ed8af21f5a50f.jpg" alt="error">
+                 <p>Decorative Blue 6 Mm Stone Chips - 1 Kg</p>
+                 <h3>₹99</h3>
+                 <button>Add To Cart</button>
+        </div>
+        <div style="height: 435px;">
+           <img src="https://cdn.plotch.io/image/upload/w_301,h_301/C/V/PLOWFUV9uE1674315030_0ea6cc50d8e3b55b30631d48bde21246668dc91566260faeffb9605d86387319.jpg" alt="error" style="height: 282px;">
+                 <p>6.5 X 6.5 X 16.5 Inch - Foldable Metal Stand With Round Corrugated Pot - Black & Gold</p>
+                 <h3>₹679</h3>
+                 <button>Add To Cart</button>
+        </div>
+   </div>
+
+
+
+
+
+
+        <div class="banner">
+            <div>
+                <h3>About Us</h3>
+                <h4>India's most convenient online grocery channel Buyerapp Fresh and Smart makes your grocery shopping even simpler. No more hassles of sweating it out in crowded markets, grocery shops & supermarkets - now shop from the comfort of your home; office, or on the move. We offer you the convenience of shopping for everything that you need for your home - be it fresh fruits & vegetables, rice, dals, oil, packaged food, dairy item, frozen, pet food, household cleaning items & personal care products from a single virtual store.</h4>
+                <h3>PAYMENT OPTIONS</h3>
+                <img src="./banner.jpg" alt="error">
+            </div>
+            <div>
+                <h3>OUR COMPANY</h3>
+                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Home+%26+Decor"><p>About Us</p></a>
+                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Home+%26+Decor"><p>Contact Us</p></a>
+            </div>
+            <div>
+                <h3>TOP CATEGORIES</h3>
+                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Kitchen+Accessories"><p>Grocery</p></a>
+            </div>
+            <div class="contacts">
+                <h3>POLICIES & INFO</h3>
+                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Home+%26+Decor"><p>Privacy Policy</p></a>
+                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Home+%26+Decor"><p>Terms & Condition</p></a>
+                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Home+%26+Decor"><p>Shipping Policy</p></a>
+                <a href="https://www.craftsvilla.com/products-near-me?sort_by=&page_id=1&product_limit=48&category=Home+%26+Decor"><p>Return & Refund</p></a>
+                <h3 id="support">SUPPORT</h3>
+                <h4>For Help, send an email to </h4>
+                <h4>customercare@craftsvilla.com</h4>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
