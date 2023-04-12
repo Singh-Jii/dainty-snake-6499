@@ -1,3 +1,6 @@
+
+# dainty-snake-6499
+
 # Craftsvilla R&B Styles
 
 Clone of Craftsvilla
@@ -6,86 +9,47 @@ It is an Indian e-commerce website that sells ethnic apparel, footwear, fashion 
 ![name](https://user-images.githubusercontent.com/119485511/231368472-d41bf030-ae82-4c7a-aa75-8342c74ade89.jpg)
 
 
+[website Url--](https://cerulean-hummingbird-b88b5c.netlify.app)
+[github url--](https://github.com/Singh-Jii/dainty-snake-6499)
 
-
-
-[website Url--](https://legendary-monstera-f8fb81.netlify.app/)
 ## Tech Stack
-**Client:** Html ,Css
-**Client Server Api:** Local Storage,Json Server.
+ Html 
+ Css
+ Javascript
+
 ## 🛠 Skills
 Javascript, HTML, CSS...
 
 
-## Run Locally
-
-Clone the project
-```bash
-git clone
-https://github.com/Singh-Jii/indigo-expert-8695
-
-Install dependencies
-
-```bash
-  npm install
-```
-Live Running server  -https://fashionhub-mrc2.onrender.com/
-Start the server
-
-```bash
-  npm run start
-```
-## Support
-For support, email -gentalman1945@gmail.com 
-
-For Go to the website click the link:-https://legendary-monstera-f8fb81.netlify.app/
-
-GitHub Link:-https://github.com/Singh-Jii/indigo-expert-8695
-## Screenshots
-![image](https://user-images.githubusercontent.com/118505620/221416485-6cf1af70-d698-4312-960a-00273632ffd6.png)
-
- 
-![image](https://user-images.githubusercontent.com/118505620/221416678-69cc7569-d686-462e-87f5-c64cb98eac78.png)
+## Landing Page
+![landing page](https://user-images.githubusercontent.com/119485511/231372737-771d8c60-993e-40a8-85e1-81f3b7573b9d.jpg)
 
 
-![image](https://user-images.githubusercontent.com/118505620/221422216-1d4b6a98-f4e1-4555-9050-a96585157311.png)
+## Register Page
+![register page](https://user-images.githubusercontent.com/119485511/231372886-de1b8310-bece-44b9-90c9-98fd04146fa3.jpg)
 
 
-
-![image](https://user-images.githubusercontent.com/118505620/221422268-0f58a12f-1154-4367-b5ff-3db9b69b7c33.png)
-
-
-
-![image](https://user-images.githubusercontent.com/118505620/221422455-c0711c6f-7fd7-4638-8363-a60b0066d8f2.png)
+## Login/Signup Page
+![login-signup page](https://user-images.githubusercontent.com/119485511/231373032-18c34ae5-ec14-4542-bcef-41bf1ae19e4c.jpg)
 
 
+## Product Page
+
+![product page](https://user-images.githubusercontent.com/119485511/231373231-84c697f4-b209-4293-9d18-3c3c23ff0baf.jpg)
 
 
-![image](https://user-images.githubusercontent.com/118505620/221417339-510aad74-3ce2-44a1-b16f-55cbb01b3033.png)
-## Contributing
+![product2 page](https://user-images.githubusercontent.com/119485511/231373275-c0b925c6-6da5-4d74-8b06-a7793f9e4e9b.jpg)
 
-Contributions are always welcome!
-## Authors
-[Lovely Singh](https://github.com/gzbsingh/Singh-Jii)
 
--[Ramanjeet Singh](https://github.com/gzbsingh)
+## Wishlist Page
 
- [Sabar Patel](https://github.com/saber003)
- 
- [Chandan Kumar Behara](https://github.com/chandankumar1425)
- 
- [Neelesh](https://github.com/Neelachari)
+![wishlist page](https://user-images.githubusercontent.com/119485511/231373413-baab73f8-e104-4719-b6d1-884a4f2e014b.jpg)
+
+
 ## Linkedin
 [Lovely Singh](https://www.linkedin.com/in/lovely-kumari-86189a215)
 
--[Ramanjeet Singh](https://www.linkedin.com/in/ramanjeet-singh-212430190/)
 
- [Sabar Patel](https://www.linkedin.com/in/saber-patel-992ab814a/)
- 
- [Chandan Kumar Behara](https://www.linkedin.com/in/kaushikchandan6372/)
- 
- [Neelesh](https://www.linkedin.com/in/neelesh-n-h-2704a7196/)
- 
 
  
  
